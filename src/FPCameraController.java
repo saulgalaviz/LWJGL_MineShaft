@@ -1,3 +1,5 @@
+
+
 import org.lwjgl.BufferUtils;
 import org.lwjgl.Sys;
 import org.lwjgl.input.Keyboard;
@@ -6,7 +8,6 @@ import org.lwjgl.opengl.Display;
 import org.lwjgl.util.vector.Vector3f;
 
 import java.nio.FloatBuffer;
-import java.util.logging.Logger;
 
 import static org.lwjgl.opengl.GL11.*;
 
@@ -180,8 +181,8 @@ public class FPCameraController {
         float movementSpeed = 0.05f;
 
         Mouse.setGrabbed(true);
-        while (!Display.isCloseRequested() && !Keyboard.isKeyDown(Keyboard.KEY_ESCAPE)) {
-            time = Sys.getTime();
+        
+        while (!Display.isCloseRequested() && !Keyboard.isKeyDown(Keyboard.KEY_ESCAPE)) {time = Sys.getTime();
             lastTime = time;
 
             dx = Mouse.getDX();
@@ -214,6 +215,11 @@ public class FPCameraController {
             //move down
             if (Keyboard.isKeyDown(Keyboard.KEY_LSHIFT)) {
                 this.moveDown(movementSpeed);
+            }
+            
+            if(Keyboard.isKeyDown(Keyboard.KEY_R))
+            {
+                chunk = new Chunk();
             }
             //set the modelview matrix back to the identity
             glLoadIdentity();

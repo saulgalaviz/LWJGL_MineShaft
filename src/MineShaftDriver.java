@@ -1,8 +1,6 @@
-import javafx.scene.Camera;
+
+
 import org.lwjgl.BufferUtils;
-import org.lwjgl.Sys;
-import org.lwjgl.input.Keyboard;
-import org.lwjgl.input.Mouse;
 import org.lwjgl.opengl.Display;
 import org.lwjgl.opengl.DisplayMode;
 import org.lwjgl.util.glu.GLU;
@@ -10,7 +8,6 @@ import org.lwjgl.util.glu.GLU;
 import java.nio.FloatBuffer;
 
 import static org.lwjgl.opengl.GL11.*;
-import static org.lwjgl.util.glu.GLU.gluPerspective;
 
 /**
  * @author Joshua Chen, Bryan Lee, Saul Galaviz, Camille Nibungco
