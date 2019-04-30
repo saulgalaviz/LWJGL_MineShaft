@@ -1,3 +1,5 @@
+
+
 import org.lwjgl.BufferUtils;
 import org.lwjgl.Sys;
 import org.lwjgl.input.Keyboard;
@@ -6,7 +8,6 @@ import org.lwjgl.opengl.Display;
 import org.lwjgl.util.vector.Vector3f;
 
 import java.nio.FloatBuffer;
-import java.util.logging.Logger;
 
 import static org.lwjgl.opengl.GL11.*;
 
